@@ -1,0 +1,6 @@
+@SuperWarehouseBackend.WebApi_HostAddress = http://localhost:5062
+
+GET {{SuperWarehouseBackend.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
