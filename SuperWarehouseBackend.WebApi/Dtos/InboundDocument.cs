@@ -1,6 +1,5 @@
-﻿namespace SuperWarehouseBackend.WebApi.Entities;
+﻿namespace SuperWarehouseBackend.WebApi.Dtos;
 
-public record InboundDocument(Guid Guid, long Number, DateTime Date)
-{
-    public InboundResource[] InboundResources { get; set; } = [];
-}
+public record InboundDocumentInput(string Number, DateTime Date, InboundResourceInput[] InboundResourceInputs);
+
+public record InboundDocumentOutput(Guid Guid, string Number, DateTime Date, InboundResourceOutput[] InboundResourceOutputs);

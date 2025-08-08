@@ -1,5 +1,4 @@
-﻿namespace SuperWarehouseBackend.WebApi.Entities;
+﻿namespace SuperWarehouseBackend.WebApi.Dtos;
 
-public record InboundResource(Guid Guid, Guid ResourceGuid, Guid MeasureUnitGuid, Guid InboundDocumentGuid)
-{
-}
+public record InboundResourceOutput(Guid Guid, Guid ResourceGuid, Guid MeasureUnitGuid, Guid InboundDocumentGuid, decimal Quantity);
+public record InboundResourceInput(Guid ResourceGuid, Guid MeasureUnitGuid, Guid InboundDocumentGuid, decimal Quantity);

@@ -1,5 +1,9 @@
-﻿namespace SuperWarehouseBackend.WebApi.Entities;
+﻿namespace SuperWarehouseBackend.WebApi.Dtos;
 
-public record Resource(Guid Guid, string Name, DateTime? ArchivedAt)
-{
-}
+public record ResourceDtoOutput(Guid Guid, string Name, bool IsArchived);
+
+public record ResourceDtoAdd(string Name);
+
+public record ResourceDtoUpdate(Guid Guid, string Name, bool IsArchived);
+
+public record ResourceDtoDelete(Guid Guid);

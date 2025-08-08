@@ -1,6 +1,10 @@
-﻿namespace SuperWarehouseBackend.WebApi.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
 
-public class InboundDocumentController
+namespace SuperWarehouseBackend.WebApi.Controllers;
+
+[ApiController]
+[Route("[controller]/[action]")]
+public class InboundDocumentController : ControllerBase
 {
     
 }

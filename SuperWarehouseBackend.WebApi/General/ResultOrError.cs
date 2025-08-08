@@ -1,4 +1,6 @@
-﻿namespace SuperWarehouseBackend.WebApi.General;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+
+namespace SuperWarehouseBackend.WebApi.General;
 
 public record ResultOrError<TResult, TError>(TResult Result, TError Error, bool IsSuccess)
 {
